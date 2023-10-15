@@ -107,3 +107,28 @@ p {
 a {
     color: #333;
 }
+
+.continue-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2CB9B0;
+    color: #fff;
+    border: none;
+    border-radius: 24px; /* Assuming the height is 48px, this will make it fully rounded */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    /* Add a hover effect for desktop users */
+    &:hover {
+        background-color: #249a91; /* A slightly darker shade of the original color for hover effect */
+    }
+
+    /* Add some spacing between the paragraph and the button */
+    + p {
+        margin-top: 20px;
+    }
+}
