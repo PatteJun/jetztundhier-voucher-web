@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gutschein einlösen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar/Header -->
+        <header class="navbar">
+            <a href="https://jetztundhier.app" class="back-link">
+                <span class="chevron">&#x276E;</span>&nbsp;Zurück
+            </a>
+            <img src="logo.png" alt="App Logo" class="app-logo">
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <h1>Gutschein einlösen</h1>
+            <p>Trage in das folgende Feld deinen persönlichen Gutschein-Code ein und klicke auf den Button zum Einlösen.</p>
+            <form>
+                <input type="text" id="voucher-code" placeholder="Code" maxlength="5" required>
+                <button type="submit">Einlösen</button>
+            </form>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <a href="https://jetztundhier.app/datenschutz" target="_blank">Datenschutz</a>
+            <a href="https://jetztundhier.app/impressum" target="_blank">Impressum</a>
+        </footer>
+    </div>
+    <script>
+        const voucherInput = document.getElementById('voucher-code');
+    
+        voucherInput.addEventListener('input', function() {
+            this.value = this.value.toUpperCase();
+        });
+    </script>    
+</body>
+</html>

@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Arial, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.back-link, .chevron {
+    display: flex;
+    align-items: center;
+}
+
+.app-logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2CB9B0;
+    color: #fff;
+    border-radius: 50px; /* This will make the button fully rounded. The exact value might need tweaking based on the button's height. */
+    border: none; /* Removes any default browser styling for the button. */
+    cursor: pointer; /* Changes the cursor to a hand when hovering over the button. */
+    transition: background-color 0.3s ease; /* Optional: Adds a smooth transition effect when the button state changes. */
+}
+
+button:hover {
+    background-color: #26a69a; /* Optional: Darkens the button slightly when hovered. */
+}
+
+input {
+    border: 1px solid #2CB9B0;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Optional: Adds a smooth transition effect when focusing the input field. */
+}
+
+input:focus {
+    border-color: #26a69a; /* Optional: Darkens the border slightly when the input field is focused. */
+    box-shadow: 0 0 5px rgba(44, 185, 176, 0.2); /* Optional: Adds a subtle glow around the input field when focused. */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+footer a:not(:last-child) {
+    margin-right: 20px;
+}
+
+h1 {
+    margin-bottom: 0;
+    color: #333;
+    line-height: 150%;
+}
+
+p {
+    color: #828282;
+    line-height: 150%;
+}
+
+.back-link, .chevron {
+    color: #333;
+}
+
+a {
+    color: #333;
+}
