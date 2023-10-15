@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let submitButtonElement = form.querySelector("button");
 
             h1Element.textContent = "Dein Gutschein-Code ist gültig 🎉";
-            paragraphElement.textContent = "Klicke nun auf den Weiter-Button, um den Kauf unserer PLUS-Version abzuschließen. Bitte gibt beim Kauf die E-Mail Adresse an, mit der du dich in der App registriert hast.";
+            paragraphElement.textContent = "Klicke nun auf den Weiter-Button, um den Kauf unserer PLUS-Version abzuschließen. Bitte gibt beim Kauf die E-Mail Adresse an, mit der du dich in der App registriert hast.<br /><br />Nach dem Kauf wird die PLUS-Version automatisch in der App freigeschaltet.";
         
             const discountLinks = {
                 10: "https://buy.stripe.com/aEUg054d499VbDi28a",
