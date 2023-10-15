@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const discountLinks = {
                 10: "https://buy.stripe.com/aEUg054d499VbDi28a",
                 20: "https://buy.stripe.com/eVa8xDcJA0Dp22I3cd",
-                50: "https://buy.stripe.com/9AQ8xD7pg3PBfTydQQ"
+                50: "https://buy.stripe.com/test_cN28yzdo7gaP58c288"
+                //50: "https://buy.stripe.com/9AQ8xD7pg3PBfTydQQ"
             };
         
             const linkElement = document.createElement("a");

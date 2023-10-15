@@ -102,6 +102,7 @@ p {
 
 .back-link, .chevron {
     color: #333;
+    text-decoration: none;
 }
 
 a {
